@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ybz-eg-N2W">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="WEo-x4-1Vf">
+            <objects>
+                <viewController id="Ybz-eg-N2W" customClass="ViewController" customModule="PulsatingView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bkg-af-rth">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9jk-it-tNd" customClass="PulseView" customModule="PulsatingView" customModuleProvider="target">
+                                <rect key="frame" x="131.5" y="277.5" width="112.5" height="112.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9jk-it-tNd" secondAttribute="height" multiplier="1:1" id="gQI-od-LtN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.0" green="0.66274509800000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9jk-it-tNd" firstAttribute="centerY" secondItem="bkg-af-rth" secondAttribute="centerY" id="3Wj-az-IjJ"/>
+                            <constraint firstItem="9jk-it-tNd" firstAttribute="centerX" secondItem="bkg-af-rth" secondAttribute="centerX" id="Tkd-Wj-PHf"/>
+                            <constraint firstItem="9jk-it-tNd" firstAttribute="width" secondItem="lz7-4b-h8T" secondAttribute="width" multiplier="0.3" id="W7O-9t-WTW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lz7-4b-h8T"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="efh-fv-f22"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RH6-MP-rlb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="91"/>
+        </scene>
+    </scenes>
+</document>
