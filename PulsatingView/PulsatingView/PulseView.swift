@@ -50,11 +50,17 @@ class PulseView: UIView {
     override func draw(_ rect: CGRect) {
         super.draw(rect)
 
+        overlay1.removeFromSuperview()
+        overlay2.removeFromSuperview()
+        staticView.removeFromSuperview()
+
+        setupSubView()
+
         overlay1.frame = bounds
         overlay2.frame = bounds
         staticView.frame = bounds
 
-        UIView.animate(withDuration: 1.2, delay: 0, options: [.autoreverse, .repeat], animations: {
+        UIView.animate(withDuration: 1.2, delay: 0.0, options: [.autoreverse, .repeat], animations: {
             self.overlay1.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
             self.overlay1.alpha = 0.5
 
