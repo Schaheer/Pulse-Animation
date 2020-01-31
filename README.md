@@ -1,10 +1,6 @@
 # Pulse-Animation
 Pulse animation for iOS using UIKit
 
-[![CI Status](https://img.shields.io/travis/ar.warraich@outlook.com/ARAccordionTableView.svg?style=flat)](https://travis-ci.org/ar.warraich@outlook.com/ARAccordionTableView)
-[![License](https://img.shields.io/cocoapods/l/ARAccordionTableView.svg?style=flat)](https://cocoapods.org/pods/ARAccordionTableView)
-[![Platform](https://img.shields.io/cocoapods/p/ARAccordionTableView.svg?style=flat)](https://cocoapods.org/pods/ARAccordionTableView)
-
 ## Example
 ![](Metadata/pulse.gif)
 
@@ -93,4 +89,4 @@ If you're using Storyboards/Interface Builder you can create a `PulseView` insta
 <img src="Metadata/color.config.png" width="300">
 
 ## Author
-Schaheer Saleem,
+Schaheer Saleem
